@@ -1,12 +1,13 @@
 :root {
     --dark: #161616;
     --light: #e6e6e6;
+    --light-tr: rgba(255, 255, 255, 0.8);
     --dark-tr: rgba( 0, 0, 0, .90);
 }
 
 @font-face {
     font-family: Nunito;
-    src: url("assets/Nunito-Regular.ttf") format("truetype");
+    src: url("/assets/Nunito-Regular.ttf") format("truetype");
     font-display: swap;
 }
 
@@ -27,4 +28,45 @@ body {
 .container {
     display: flex;
     justify-content: center;
+}
+
+.navbar {
+    background: var(--light-tr);
+    height: 4rem;
+    justify-content: space-between;
+    padding: 0rem 3rem;
+    align-items: center;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgb(86, 86, 255);
+}
+
+.nav-link {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: var(--dark);
+}
+
+#sign-up {
+    background: red;
+}
+
+.footer {
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.footer-item {
+    padding: 0.75rem;
+    font-weight: bold;
+    color: var(--dark);
+}
+
+#copyright {
+    text-align: center;
+    font-weight: bold;
+    padding: 2rem;
 }
