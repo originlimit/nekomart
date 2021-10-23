@@ -1,7 +1,7 @@
 :root {
     --dark: #161616;
     --light: #e6e6e6;
-    --light-tr: rgba(255, 255, 255, 0.8);
+    --light-tr: rgba(255, 255, 255, 0.85);
     --dark-tr: rgba( 0, 0, 0, .90);
 }
 
@@ -30,28 +30,56 @@ body {
     justify-content: center;
 }
 
-.navbar {
-    background: var(--light-tr);
+#bg {
     height: 4rem;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar {
+    z-index: 98;
+    position: fixed;
     justify-content: space-between;
-    padding: 0rem 3rem;
     align-items: center;
+    height: 4rem;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    background-color: var(--light-tr);
+    padding: .50rem 3rem;
 }
 
-.logo {
+#nav-logo {
     font-size: 2rem;
-    font-weight: bold;
-    color: rgb(86, 86, 255);
+    color: #0300af;
+    font-weight: 900;
 }
 
-.nav-link {
+.hamburger {
+    display: none;
+    background-color: transparent;
+}
+
+.nav-list {
+    z-index: 99;
+    position: fixed;
+    width: 100%;
+    padding: 1.25rem 3rem;
+    justify-content: flex-end;
+}
+
+.nav-list-item {
     font-size: 1.25rem;
-    font-weight: bold;
+    padding: 1rem 1rem;
     color: var(--dark);
+    font-weight: bold;
 }
 
-#sign-up {
-    background: red;
+#filler {
+    background-color: var(--light);
+    height: 4rem;
 }
 
 .footer {
@@ -60,7 +88,8 @@ body {
 }
 
 .footer-item {
-    padding: 0.75rem;
+    font-size: 1.3rem;
+    padding: 1rem 3.5rem;
     font-weight: bold;
     color: var(--dark);
 }
@@ -69,4 +98,53 @@ body {
     text-align: center;
     font-weight: bold;
     padding: 2rem;
+}
+
+@media(max-width: 47rem){
+
+    .navbar {
+        padding: .50rem;
+    }
+
+    #nav-logo {
+        font-size: 1.85rem;
+        padding: .7rem;
+    }
+
+    .hamburger {
+        display: unset;
+    }
+
+    .nav-list {
+        display: none;
+        z-index: 50;
+        flex-direction: column;
+        height: 100%;
+        background-color: transparent;
+        padding: 4rem 0rem 0rem 0rem;
+    }
+
+    .nav-list.nav-list-toggle {
+        display: unset;
+    }
+
+    .nav-list-item {
+        font-size: 1.5rem;
+        padding: 1rem;
+        background-color: transparent;
+    }
+
+    .nav-item-container {
+        display: flex;
+        justify-content: center;
+        height: 25%;
+        background-color: var(--light-tr);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+    }
+
+    .footer-item {
+        font-size: 1rem;
+        padding: .75rem;
+    }
 }

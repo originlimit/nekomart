@@ -1,6 +1,99 @@
 .banner {
     font-weight: bold;
     align-items: center;
-    background-color: rgb(179, 179, 255);
+    background-color: rgb(154, 154, 255);
     height: 2rem;
+    color: var(--dark);
+}
+
+.hero {
+    background: rgb(29, 29, 29);
+    height: 30rem;
+    max-width: 87rem;
+    display: inherit;
+    margin-top: 1rem;
+}
+
+.hero-alt {
+    background: rgb(45, 56, 102);
+}
+
+.hero-info {
+    flex-direction: column;
+    text-align: center;
+    color: var(--light);
+    justify-content: center;
+    padding: 3rem 0rem;
+}
+
+.hero-text {
+    font-size: 1.3rem;
+    padding: 1rem 3rem;
+}
+
+.hero-title {
+    padding-top: 0rem;
+    font-size: 1.5rem;
+}
+
+.hero-button, .hero-button::after {
+    padding: 0rem;
+    margin: 2rem auto;
+    font-weight: bold;
+    width: 10rem;
+    height: 2.5rem;
+    border-radius: 1.25rem;
+    background-color: var(--light-tr);
+    border: rgba(0, 0, 0, 0.3) solid .15rem;
+    transition: ease-out .5s;
+}
+
+.hero-button:hover {
+    animation: reverse;
+    transition: ease-in .5s;
+    background-color: rgba(166, 166, 166, 0.3);
+    border: var(--light-tr) solid .15rem;
+    color: var(--light);
+}
+
+img {
+    min-width: 50%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media(max-width: 47rem){
+    .hero {
+        flex-direction: column-reverse;
+        height: auto;
+        max-width: 50rem;
+    }
+
+    .hero-alt {
+        flex-direction: column;
+    }
+
+    .hero-info {
+        padding: 2.6rem 0rem;
+    }
+
+    .hero-text {
+        font-size: 1rem;
+        padding: 1rem 2rem;
+    }
+
+    .hero-title {
+        padding-top: 0rem;
+        font-size: 1.3rem;
+    }
+
+    .hero-button, .hero-button::after {
+        padding: 0;
+    }
+
+    img {
+        max-width: 100%;
+        min-height: 40%;
+        object-fit: contain;
+    }
 }
