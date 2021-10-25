@@ -3,6 +3,7 @@
     --light: #e6e6e6;
     --light-tr: rgba(255, 255, 255, 0.85);
     --dark-tr: rgba( 0, 0, 0, .90);
+    --border: rgba(0, 0, 0, 0.3);
 }
 
 @font-face {
