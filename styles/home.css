@@ -68,10 +68,16 @@ img {
     object-fit: cover;
 }
 
+.offers-intro {
+    font-size: 1.25rem;
+    margin: 1rem 0rem 0rem 2rem;
+    display: flex;
+    justify-content: center;
+}
+
 .offers {
     display: flex;
     overflow-x: auto;
-    margin-top: .5rem;
 }
 
 .offers::-webkit-scrollbar {
