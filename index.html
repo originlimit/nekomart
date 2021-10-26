@@ -26,7 +26,7 @@
             </ul>
         </header>
         <div id="filler"></div>
-        <article>
+        <article class="main-content">
             <section id="banner" class="container banner">
                 This week's steal: All produce 20% off!
             </section>
@@ -37,14 +37,14 @@
                         <p class="hero-text">All of our food products are hand-picked, fresh, and cared for. From our vegetables to our cuts — everything is from our farms to your kitchen.</p>
                         <button type="button" class="hero-text hero-button" onclick="">Shop now</button>
                     </div>
-                    <img class="hero-img" src="/assets/home/kitchen.jpeg" alt="produce-items">
+                    <img loading="lazy" class="hero-img" src="/assets/home/kitchen.jpeg" alt="produce-items">
                 </section>
             </div>
-            <div>
+            <div class="container offers-align">
                 <div class="offers-intro"><h1>Offers:</h1></div>
                 <section class="offers">
                     <div class="offers-item">
-                        <img class="offers-pic" src="assets/home/offers/camera.jpg" alt="sony hd camera">
+                        <img loading="lazy" class="offers-pic" src="assets/home/offers/camera.jpg" alt="sony hd camera">
                         <div class="offers-text">
                             <h1 class="offers-title">Sony A6600</h1>
                             <p class="offers-price">$1,900</p>
@@ -52,7 +52,7 @@
                         </div>
                     </div>
                     <div class="offers-item">
-                        <img class="offers-pic" src="assets/home/offers/earbuds.jpg" alt="samsung galaxy buds+">
+                        <img loading="lazy" class="offers-pic" src="assets/home/offers/earbuds.jpg" alt="samsung galaxy buds+">
                         <div class="offers-text">
                             <h1 class="offers-title">Samsung Buds+</h1>
                             <p class="offers-price">$120</p>
@@ -60,7 +60,7 @@
                         </div>
                     </div>
                     <div class="offers-item">
-                        <img class="offers-pic" src="assets/home/offers/headphones.jpg" alt="zb brand headphones">
+                        <img loading="lazy" class="offers-pic" src="assets/home/offers/headphones.jpg" alt="zb brand headphones">
                         <div class="offers-text">
                             <h1 class="offers-title">ZB Wireless</h1>
                             <p class="offers-price">$445</p>
@@ -68,7 +68,7 @@
                         </div>
                     </div>
                     <div class="offers-item">
-                        <img class="offers-pic" src="assets/home/offers/projector.jpg" alt="hd projectors">
+                        <img loading="lazy" class="offers-pic" src="assets/home/offers/projector.jpg" alt="hd projectors">
                         <div class="offers-text">
                             <h1 class="offers-title">HD Projector</h1>
                             <p class="offers-price">$1,250</p>
@@ -76,7 +76,7 @@
                         </div>
                     </div>
                     <div class="offers-item">
-                        <img class="offers-pic" src="assets/home/offers/ssd.jpg" alt="samsung ssd">
+                        <img loading="lazy" class="offers-pic" src="assets/home/offers/ssd.jpg" alt="samsung ssd">
                         <div class="offers-text">
                             <h1 class="offers-title">Samsung SSDs</h1>
                             <p class="offers-price">$135</p>
@@ -84,7 +84,7 @@
                         </div>
                     </div>
                     <div class="offers-item">
-                        <img class="offers-pic" src="assets/home/offers/tablet.jpg" alt="samsung tablet">
+                        <img loading="lazy" class="offers-pic" src="assets/home/offers/tablet.jpg" alt="samsung tablet">
                         <div class="offers-text">
                             <h1 class="offers-title">Samsung Tablets</h1>
                             <p class="offers-price">$500</p>
@@ -92,7 +92,7 @@
                         </div>
                     </div>
                     <div class="offers-item">
-                        <img class="offers-pic" src="assets/home/offers/tv.jpg" alt="lg tv">
+                        <img loading="lazy" class="offers-pic" src="assets/home/offers/tv.jpg" alt="lg tv">
                         <div class="offers-text">
                             <h1 class="offers-title">LG QNED 65"</h1>
                             <p class="offers-price">$2,300</p>
@@ -100,7 +100,7 @@
                         </div>
                     </div>
                     <div class="offers-item">
-                        <img class="offers-pic" src="assets/home/offers/watch.jpg" alt="garmin Watches">
+                        <img loading="lazy" class="offers-pic" src="assets/home/offers/watch.jpg" alt="garmin Watches">
                         <div class="offers-text">
                             <h1 class="offers-title">Garmin Watches</h1>
                             <p class="offers-price">$175</p>
@@ -111,13 +111,33 @@
             </div>
             <div class="container">
                 <section class="container hero hero-alt">
-                    <img class="hero-img" src="/assets/home/clothes.jpeg" alt="in-store clothes">
+                    <img loading="lazy" class="hero-img" src="/assets/home/clothes.jpeg" alt="in-store clothes">
                     <div class="container hero-info">
                         <h1 class="hero-text hero-title">Limited Collections</h1>
                         <p class="hero-text">Fashionable outfits don't have to come at a heavy price. Check out our stylish summer collections before they go. Half these collections are on sale, so get them while you still can!</p>
-                        <button type="button" class="hero-text hero-button" onclick="">Shop now</button>
+                        <button type="button" class="hero-text hero-button" onclick="console.log('works')">Shop now</button>
                     </div>
                 </section>
+            </div>
+            <div class="container">
+                <div class="mission-wrapper">
+                    <section class="container hero mission">
+                        <img class="hero-img mission-img" loading="lazy" src="/assets/home/BLM.jpeg" alt="Black Lives Matter (BLM)">
+                        <div class="container hero-info">
+                            <h1 class="hero-text hero-title">Black Lives Matter.</h1>
+                            <p class="hero-text">Black lives matter — period. We stand with black families, organizations, and individuals around the world to help bring awareness to this noble cause.</p>
+                            <button type="button" class="hero-text hero-button" onclick="location.href='https://blacklivesmatter.com/about/'">Learn more</button>
+                        </div>
+                    </section>
+                    <section class="container hero hero-alt mission">
+                        <img class="hero-img mission-img" loading="lazy" src="/assets/home/doctor.jpeg" alt="Picture of a doctor">
+                        <div class="container hero-info">
+                            <h1 class="hero-text hero-title">COVID Testing</h1>
+                            <p class="hero-text">We now offer affordable, 24/7 COVID-19 testing! Vaccines will be available in the near future. Please help us flatten the curve — get tested now!</p>
+                            <button type="button" class="hero-text hero-button" onclick="location.href='https://www.cdc.gov/coronavirus/2019-ncov/index.html'"console.log('works')>Learn more</button>
+                        </div>
+                    </section>
+                </div>
             </div>
         </article>
         <footer class="container footer">
