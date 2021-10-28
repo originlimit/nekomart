@@ -1,0 +1,32 @@
+.main {
+    flex-direction: column;
+    align-items: center;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+.card {
+    color: var(--dark);
+    max-width: 60rem;
+    padding: 1rem 2.5rem;
+    font-size: 1.15rem;
+}
+
+hr {
+    height: .25rem;
+    background-color: black;
+    border-radius: .15rem;
+}
+
+.content {
+    margin: .5rem;
+}
+
+@media(max-width: 47rem){
+    .card {
+        padding: 1rem;
+        font-size: 1rem;
+    }
+}
