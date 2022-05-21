@@ -1,5 +1,6 @@
 # nekomart
 Website for a fictional retail place; all contents and claims in this page are fictional.
+This site was build with pure HTML, CSS, and JavaScript; it has no outside dependencies.
 
 ## Screenshots
 #### On Desktop
